@@ -22,9 +22,9 @@ public class ArrayStackDemo {
         stack.push(3);
         stack.push(4);
         System.out.println(stack.pop());
-        System.out.println(stack.pop());
-
-        System.out.println("遍历栈");
+//        System.out.println(stack.pop());
+//
+//        System.out.println("遍历栈");
         stack.list();
     }
 
