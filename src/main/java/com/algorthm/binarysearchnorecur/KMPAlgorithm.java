@@ -24,12 +24,12 @@ public class KMPAlgorithm {
         String str2 = "ABCDABD";
         //String str2 = "BBC";
 
-        int[] next = kmpNext("abab"); //[0, 1, 2, 0]
+        int[] next = kmpNext("ABCDAsBD"); //[0, 1, 2, 0]
         System.out.println("next=" + Arrays.toString(next));
 
-//        int index = kmpSearch(str1, str2, next);
-//        System.out.println("index=" + index); // 15了
-
+        int index = kmpSearch(str1, str2, next);
+        System.out.println("index=" + index); // 15了
+//        System.out.println(str1.substring(index, index + str2.length()));
 
     }
 
@@ -49,7 +49,7 @@ public class KMPAlgorithm {
             //需要处理 str1.charAt(i) ！= str2.charAt(j), 去调整j的大小
             //KMP算法核心点, 可以验证...
             while (j > 0 && str1.charAt(i) != str2.charAt(j)) {
-                j = next[j - 1];
+                    j = next[j - 1];
             }
 
             if (str1.charAt(i) == str2.charAt(j)) {

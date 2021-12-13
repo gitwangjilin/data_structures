@@ -57,3 +57,32 @@ public class ViolenceMatch {
     }
 
 }
+//public class Bao {
+//    public static void main(String[] args) {
+//        String a = "abacaedfcdfcaf";
+//        String b = "cdfc";
+//        char[] aChars = a.toCharArray();
+//        char[] bChars = b.toCharArray();
+//        int violence = match(aChars, bChars);
+//        System.out.println(violence);
+//    }
+//
+//    private static int match(char[] aChars, char[] bChars) {
+//        int aIndex = 0;
+//        int bIndex = 0;
+//        while (aIndex < aChars.length && bIndex < bChars.length) {
+//            if (aChars[aIndex] == bChars[bIndex]) {
+//                aIndex++;
+//                bIndex++;
+//            } else {
+//                aIndex = aIndex + 1 - bIndex;
+//                bIndex = 0;
+//            }
+//
+//        }
+//        if (bIndex == bChars.length) {
+//            return bIndex - bChars.length;
+//        }
+//        return -1;
+//    }
+//}
